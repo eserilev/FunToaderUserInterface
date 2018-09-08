@@ -1,0 +1,21 @@
+<div class="table">
+  <div class="row">
+    <div class="col-sm-12">
+      MIDI
+    </div>
+    <div class="col-sm-12">
+      <select (ngModelChange)="selectMidiChange($event)" style="width:100%" [(ngModel)]="selectedMidi">
+        <option *ngFor="let midi of midiInputs" [ngValue]="midi">{{midi.manufacturer}} {{midi.name}}</option>
+      </select>
+    </div>
+    <div class="col-sm-12" style="padding-top:.5em">
+      <input class="colorPicker" type="checkbox" /> On/Off
+    </div>
+    <div class="col-sm-12">
+      <input style="width:100%; background-color:green;  color:white" value="Add Command" type="button">
+    </div>
+    <div class="col-sm-12">
+      <input style="width:100%; background-color:green;  color:white" value="Done" type="button">
+    </div>
+  </div>
+</div>

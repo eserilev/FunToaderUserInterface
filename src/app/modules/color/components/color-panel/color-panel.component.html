@@ -1,0 +1,32 @@
+
+<div class="table" style="width:12em">
+    <div class="row">
+        <div class="col-sm-5">
+            Toggle
+        </div>
+        <div class="col-sm-2">
+            
+        </div>
+        <div class="col-sm-5">
+            Momentary
+        </div>
+        <div class="col-sm-5" >
+            <div (click)="logColor()" class="colorDisplay" [style.background]="color.rgbaValue"></div>
+        </div>
+        <div class="col-sm-2"  >
+            <div class="table">
+                <div class="row">
+                    <div class="col-sm-12" style="vertical-align: top;">
+                        <div class="colorPicker" (colorPickerClose)="colorChange()"  [(colorPicker)]="color.rgbaValue" [style.background]="color.rgbaValue"></div>
+                    </div>
+                    <div class="col-sm-12"  style="margin-top:2em; vertical-align: bottom;">
+                        <input class="colorPicker" type="checkbox"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <div (click)="logColor()" class="colorDisplay" [style.background]="color.rgbaValue"></div>           
+        </div>
+    </div>
+</div>

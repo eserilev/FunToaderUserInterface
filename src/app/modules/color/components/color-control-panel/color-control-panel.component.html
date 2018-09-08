@@ -1,0 +1,28 @@
+<div class="table">
+  <div class="row">
+    <div class="col-sm-12">
+      <input style="width:100%; background-color:green;  color:white" value="Selected Colors" type="button">
+    </div>
+    <div class="col-sm-12">
+        <input style="width:100%; background-color:green; color:white" value="Colors" type="button">
+      </div>
+    <div class="col-sm-6">
+      Count 
+    </div>
+    <div class="col-sm-6">
+        <input style="width: 100%" (change)="countChanged()" type="number" min="1" max="250"  [(ngModel)]="count">
+    </div>
+    <div class="col-sm-12" style="margin:auto">
+        <input style="width:100%" (change)="countChanged()" type="range" min="1"  [(ngModel)]="count" max="250" value="50">
+    </div>
+    <div class="col-sm-6">
+        Time
+      </div>
+      <div class="col-sm-6">
+          <input style="width: 100%" (change)="timeChanged()" type="number" min="1"  [(ngModel)]="time" max="60000">
+      </div>
+      <div class="col-sm-12" style="margin:auto">
+          <input style="width:100%" (change)="timeChanged()" type="range" min="1" [(ngModel)]="time" max="60000" value="50">
+      </div>
+  </div>
+</div>

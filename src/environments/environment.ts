@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:62482/api/'
+  apiUrl: 'http://funtoaderwebservice20180908044743.azurewebsites.net/api/'
 };
 
 /*

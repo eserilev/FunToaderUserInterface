@@ -35,7 +35,7 @@ export class MidiComponent implements OnInit {
     this.midiService.selectMidiDevice(this.selectedMidi);
    // var e: WebMidi.MIDIMessageEvent
 //e = onMIDIMessage;
-    this.selectedMidi.onmidimessage = onMIDIMessage
+   // this.selectedMidi.onmidimessage = onMIDIMessage
   }
 
   test() {

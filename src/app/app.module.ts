@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { NgRedux, DevToolsExtension, NgReduxModule } from '@angular-redux/store';
 import { IAppState, APP_INITIAL_STATE, rootReducer } from 'src/app/app.store';
 import { isDevMode } from '@angular/core';
-import { ColorService } from 'src/app/modules/color/services/color.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ContentViewerComponent } from './modules/main/components/content-viewer/content-viewer.component';
@@ -36,7 +35,6 @@ import { MidiModule } from 'src/app/modules/midi/midi.module';
     
   ],
   providers: [
-    ColorService,
   ],
   bootstrap: [AppComponent]
 })

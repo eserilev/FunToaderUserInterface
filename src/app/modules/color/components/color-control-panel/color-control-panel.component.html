@@ -1,28 +1,28 @@
 <div class="table">
-  <div class="row">
-    <div class="col-sm-12">
-      <input style="width:100%; background-color:green;  color:white" value="Selected Colors" type="button">
+    <div class="row">
+        <div class="col-sm-12">
+            <button mat-raised-button>Selected Colors</button>
+        </div>
+        <div class="col-sm-12" style="padding-top:2%">
+            <button mat-raised-button>Colors</button>
+        </div>
+        <div class="col-sm-12">
+            <mat-form-field>
+              
+                <input matInput (change)="countChanged()" type="number" min="1" max="250" [(ngModel)]="count" placeholder="Count">
+            </mat-form-field>
+        </div>
+        <div class="col-sm-12">
+            <mat-slider (change)="countChanged()" type="range" min="1" [(ngModel)]="count" max="250" value="50"></mat-slider>
+        </div>
+        <div class="col-sm-12">
+            <mat-form-field>
+                <input matInput (change)="timeChanged()" type="number" min="1" [(ngModel)]="time" max="60000" placeholder="Time">
+            </mat-form-field>
+
+        </div>
+        <div class="col-sm-12" style="margin:auto">
+            <mat-slider (change)="timeChanged()" type="range" min="1" [(ngModel)]="time" max="60000" value="50"></mat-slider>
+        </div>
     </div>
-    <div class="col-sm-12">
-        <input style="width:100%; background-color:green; color:white" value="Colors" type="button">
-      </div>
-    <div class="col-sm-6">
-      Count 
-    </div>
-    <div class="col-sm-6">
-        <input style="width: 100%" (change)="countChanged()" type="number" min="1" max="250"  [(ngModel)]="count">
-    </div>
-    <div class="col-sm-12" style="margin:auto">
-        <input style="width:100%" (change)="countChanged()" type="range" min="1"  [(ngModel)]="count" max="250" value="50">
-    </div>
-    <div class="col-sm-6">
-        Time
-      </div>
-      <div class="col-sm-6">
-          <input style="width: 100%" (change)="timeChanged()" type="number" min="1"  [(ngModel)]="time" max="60000">
-      </div>
-      <div class="col-sm-12" style="margin:auto">
-          <input style="width:100%" (change)="timeChanged()" type="range" min="1" [(ngModel)]="time" max="60000" value="50">
-      </div>
-  </div>
 </div>

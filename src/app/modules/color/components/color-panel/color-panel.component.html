@@ -1,32 +1,70 @@
+<div class="table">
+    <div class="row">
+        <div class="col-sm-5">
+            <button (click)="logColor()" class="colorDisplay" [style.background]="color.rgbaValue" mat-raised-button></button>
+        </div>
+        <div class="col-sm-2">
+            <mat-checkbox class="colorPicker"></mat-checkbox>
+            <div mat-raised-button class="colorPicker" (colorPickerClose)="colorChange()" cpPosition="left"   [(colorPicker)]="color.rgbaValue" [style.background]="color.rgbaValue"></div>
+        </div>
+        <div class="col-sm-5">
+            <button (click)="logColor()" class="colorDisplay" [style.background]="color.rgbaValue" mat-raised-button></button>
+        </div>
+    </div>
+</div>
+<!--
+<mat-grid-list cols="6">
+    <mat-grid-tile colspan="2" rowspan="2">
+        <button (click)="logColor()" class="colorDisplay" [style.background]="color.rgbaValue" mat-raised-button></button>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="2" rowspan="1">
+        <mat-checkbox class="colorPicker"></mat-checkbox>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="2" rowspan="2">
+        <button (click)="logColor()" class="colorDisplay" [style.background]="color.rgbaValue" mat-raised-button></button>
+    </mat-grid-tile>
 
-<div class="table" style="width:12em">
+    <mat-grid-tile colspan="2" rowspan="1">
+        <button mat-raised-button class="colorPicker" (colorPickerClose)="colorChange()" [(colorPicker)]="color.rgbaValue" [style.background]="color.rgbaValue"></button>
+    </mat-grid-tile>
+
+</mat-grid-list>
+
+<div class="table">
     <div class="row">
         <div class="col-sm-5">
             Toggle
         </div>
         <div class="col-sm-2">
-            
+
         </div>
         <div class="col-sm-5">
             Momentary
         </div>
-        <div class="col-sm-5" >
-            <div (click)="logColor()" class="colorDisplay" [style.background]="color.rgbaValue"></div>
+        <div class="col-sm-5">
+        
+
         </div>
-        <div class="col-sm-2"  >
+        <div class="col-sm-2">
+                <mat-checkbox class="colorPicker"></mat-checkbox>
+                   <button mat-raised-button class="colorPicker" (colorPickerClose)="colorChange()" [(colorPicker)]="color.rgbaValue" [style.background]="color.rgbaValue"></button>
+             
             <div class="table">
                 <div class="row">
-                    <div class="col-sm-12" style="vertical-align: top;">
-                        <div class="colorPicker" (colorPickerClose)="colorChange()"  [(colorPicker)]="color.rgbaValue" [style.background]="color.rgbaValue"></div>
+                    <div class="col-sm-12">
+                     
                     </div>
-                    <div class="col-sm-12"  style="margin-top:2em; vertical-align: bottom;">
-                        <input class="colorPicker" type="checkbox"/>
+                    <div class="col-sm-12">
+                  
+
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-5">
-            <div (click)="logColor()" class="colorDisplay" [style.background]="color.rgbaValue"></div>           
+            <button (click)="logColor()" class="colorDisplay" [style.background]="color.rgbaValue" mat-raised-button></button>
+
         </div>
     </div>
 </div>
+-->

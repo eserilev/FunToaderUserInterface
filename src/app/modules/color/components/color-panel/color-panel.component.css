@@ -1,9 +1,11 @@
+
 .colorPicker
 {
-    width:1.5em; height:1.5em; border: 1px black solid
-}
+ 
+    width:1.2em; height:1.2em;
 
+}
 .colorDisplay
 {
-    width:5em; height:5em; border: 1px black solid
+    width:6em; height:6em;
 }

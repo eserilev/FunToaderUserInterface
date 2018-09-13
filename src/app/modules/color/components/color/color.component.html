@@ -1,13 +1,13 @@
-<div class="table" style="width:14em; padding-left:1em">
-  <div class="row">
-    <div class="col-sm-12">
-      Color
-    </div>
-    <div class="col-sm-12">
-      <app-color-control-panel></app-color-control-panel>
-    </div>
-    <div class="col-sm-12" *ngFor="let c of colorList">
-      <app-color-panel [color]="c"></app-color-panel>
-    </div>
-  </div>
-</div>
+<mat-card>
+    <div class="table">
+        <div class="row">
+          <div class="col-sm-12">
+            <app-color-control-panel></app-color-control-panel>
+          </div>
+          <div class="col-sm-12" *ngFor="let c of colorList">
+            <app-color-panel [color]="c"></app-color-panel>
+          </div>
+        </div>
+      </div>                            
+</mat-card>
+

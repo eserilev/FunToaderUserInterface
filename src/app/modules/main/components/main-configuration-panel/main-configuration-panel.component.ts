@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainConfigurationPanelComponent implements OnInit {
 
+  repeatCommands: any;
+  mainDelay: any;
+  isLive: any;
+
   constructor() { }
 
   ngOnInit() {

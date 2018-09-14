@@ -1,9 +1,10 @@
 
-.colorPicker
-{
- 
-    width:1.2em; height:1.2em;
 
+
+
+.colorPicker:hover
+{
+    cursor: pointer;
 }
 .colorDisplay
 {

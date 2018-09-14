@@ -1,0 +1,11 @@
+.mat-list-item:hover {
+    background: #d3d3d3;
+    cursor: pointer
+
+}
+
+.mat-list-item:active {
+    background:none;
+    cursor: pointer
+
+}

@@ -4,8 +4,19 @@
             <button (click)="logColor()" class="colorDisplay" [style.background]="color.rgbaValue" mat-raised-button></button>
         </div>
         <div class="col-sm-2">
-            <mat-checkbox class="colorPicker"></mat-checkbox>
-            <div mat-raised-button class="colorPicker" (colorPickerClose)="colorChange()" cpPosition="left"   [(colorPicker)]="color.rgbaValue" [style.background]="color.rgbaValue"></div>
+            <div class="table">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <mat-checkbox class="colorPicker"></mat-checkbox>
+                    </div>
+                    <div class="col-sm-12">
+                        <mat-icon class="colorPicker" (colorPickerClose)="colorChange()" cpPosition="left" [(colorPicker)]="color.rgbaValue" [style.color]="color.rgbaValue"
+                            svgIcon="color-fill"></mat-icon>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
         <div class="col-sm-5">
             <button (click)="logColor()" class="colorDisplay" [style.background]="color.rgbaValue" mat-raised-button></button>

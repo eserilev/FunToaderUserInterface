@@ -5,7 +5,7 @@ import { select } from '@angular-redux/store';
 import { ColorService } from 'src/app/modules/color/services/color.service';
 
 @Component({
-  selector: 'app-color',
+  selector: 'color',
   templateUrl: './color.component.html',
   styleUrls: ['./color.component.css']
 })

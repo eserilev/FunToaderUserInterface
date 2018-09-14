@@ -5,7 +5,7 @@ import {VgOverlayPlayModule} from 'videogular2/overlay-play';
 import {VgBufferingModule} from 'videogular2/buffering';
 import { VideoPlayerComponent } from "src/app/modules/media-player/components/video-player/video-player.component";
 import { MaterialModule } from "src/app/material.module";
-import { MainModule } from "src/app/modules/main/main.module";
+import { CommonModule } from "src/app/modules/main/common.module";
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { MainModule } from "src/app/modules/main/main.module";
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule,
-    MainModule
+    CommonModule
     
   ],
   providers: [

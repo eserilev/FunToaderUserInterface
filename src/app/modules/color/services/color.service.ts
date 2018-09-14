@@ -46,7 +46,11 @@ export class ColorService {
     c5.index = 5;
     c5.rgbaValue = 'rgb(0,216,255)';
     c5.selected = false;  
-    list.push(c1); list.push(c2); list.push(c3); list.push(c4); list.push(c5);
+    var c6 = new ColorModel();
+    c6.index = 6;
+    c6.rgbaValue = 'rgb(52,216,255)';
+    c6.selected = false;  
+    list.push(c1); list.push(c2); list.push(c3); list.push(c4); list.push(c5); list.push(c6);
     this.ngRedux.dispatch({type: GET_COLOR_LIST_SUCCESS, colorList: list})
     
   }

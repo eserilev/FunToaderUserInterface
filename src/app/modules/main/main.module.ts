@@ -12,12 +12,14 @@ import { MediaPlayerModule } from "src/app/modules/media-player/media-player.mod
 import { MidiModule } from "src/app/modules/midi/midi.module";
 import { ColorModule } from "src/app/modules/color/color.module";
 import { MainConfigurationPanelComponent } from "src/app/modules/main/components/main-configuration-panel/main-configuration-panel.component";
+import { ContentViewerComponent } from "src/app/modules/main/components/content-viewer/content-viewer.component";
 
 @NgModule({
     declarations: [
         MainExpansionPanelComponent,
         HomeComponent,
-        MainConfigurationPanelComponent
+        MainConfigurationPanelComponent,
+        ContentViewerComponent
     ],
     imports: [
         CommonModule,
@@ -30,7 +32,8 @@ import { MainConfigurationPanelComponent } from "src/app/modules/main/components
     ],
     exports: [
         MainExpansionPanelComponent,
-        HomeComponent
+        HomeComponent,
+        ContentViewerComponent
     ],
     entryComponents: [
 

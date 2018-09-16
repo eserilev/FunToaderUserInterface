@@ -15,13 +15,16 @@ import { MediaPlayerModule } from 'src/app/modules/media-player/media-player.mod
 import { ColorModule } from 'src/app/modules/color/color.module';
 import { MidiModule } from 'src/app/modules/midi/midi.module';
 import { MainModule } from 'src/app/modules/main/main.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    MainModule
+    MainModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
   ],

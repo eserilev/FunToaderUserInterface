@@ -1,0 +1,1 @@
+export const CHANGE_MEDIA_PANEL = "CHANGE_MEDIA_PANEL";

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MediaPanelType } from 'src/app/modules/main/enums/media-panel-type.enum';
+import { CommonService } from 'src/app/modules/main/services/common.service';
 
 @Component({
   selector: 'main-expansion-panel',
@@ -7,9 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainExpansionPanelComponent implements OnInit {
 
-  constructor() { }
+  selectedInterface: MediaPanelType
+
+  public interfaces: MediaPanelType[] = [
+    MediaPanelType.Audio,
+    MediaPanelType.Color,
+    MediaPanelType.Effects,
+    MediaPanelType.Sequence,
+    MediaPanelType.Slideshow,
+    MediaPanelType.Video
+  ]
+  constructor(
+    private commonService: CommonService
+  ) { }
 
   ngOnInit() {
   }
 
+  setSelectedInterface(i: MediaPanelType) {
+    this.selectedInterface = i;
+    this.commonService.changeMediaPanel(this.selectedInterface);
+  
+  }
+
 }
+

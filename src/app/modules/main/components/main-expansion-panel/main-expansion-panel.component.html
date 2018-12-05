@@ -1,27 +1,8 @@
 <mat-card>
   <mat-list>
-    <mat-list-item>
-      <h4 mat-line>Video</h4>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-    <mat-list-item>
-      <h4 mat-line>Audio</h4>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-    <mat-list-item>
-      <h4 mat-line>Color</h4>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-    <mat-list-item>
-      <h4 mat-line>Slideshow</h4>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-    <mat-list-item>
-      <h4 mat-line>Effects</h4>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-    <mat-list-item>
-      <h4 mat-line>Sequence</h4>
+    <mat-list-item *ngFor="let i of interfaces" (click)="setSelectedInterface(i)" >
+      <h4 style="width:100%" mat-line >{{i.toString()}}</h4>
+      <mat-divider></mat-divider>
     </mat-list-item>
   </mat-list>
 </mat-card>

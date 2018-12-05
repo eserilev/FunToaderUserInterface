@@ -7,23 +7,31 @@ import { VideoPlayerComponent } from "src/app/modules/media-player/components/vi
 import { MaterialModule } from "src/app/material.module";
 import { CommonModule } from "src/app/modules/main/common.module";
 
+let components = [
+  VideoPlayerComponent
+]
+
+let modules = [
+  VgCoreModule,
+  VgControlsModule,
+  VgOverlayPlayModule,
+  VgBufferingModule,
+  CommonModule
+]
+
 @NgModule({
   declarations: [
-    VideoPlayerComponent
+    ...components
   ],
   imports: [
-    VgCoreModule,
-    VgControlsModule,
-    VgOverlayPlayModule,
-    VgBufferingModule,
-    CommonModule
-    
+    ...modules
+   
   ],
   providers: [
   
   ],
   exports: [
-    VideoPlayerComponent
+    ...components
   ],
   entryComponents: [
     

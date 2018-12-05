@@ -1,0 +1,16 @@
+<div class="table">
+  <div class="row" *ngFor="let s of selectArray">
+    <div class="col-sm-8">
+      <mat-form-field>
+        <mat-select placeholder="Select file">
+          <mat-option *ngFor="let file of files" [value]="file">
+            {{file.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-sm-4">
+      <button mat-raised-button>Set</button>
+    </div>
+  </div>
+</div>

@@ -13,19 +13,22 @@ import { MidiModule } from "src/app/modules/midi/midi.module";
 import { ColorModule } from "src/app/modules/color/color.module";
 import { MainConfigurationPanelComponent } from "src/app/modules/main/components/main-configuration-panel/main-configuration-panel.component";
 import { ContentViewerComponent } from "src/app/modules/main/components/content-viewer/content-viewer.component";
+import { FileResourcePanelComponent } from "src/app/modules/main/components/file-resource-panel/file-resource-panel.component";
+import { AudioModule } from "src/app/modules/audio/audio.module";
 
 @NgModule({
     declarations: [
         MainExpansionPanelComponent,
         HomeComponent,
         MainConfigurationPanelComponent,
-        ContentViewerComponent
+        ContentViewerComponent,
     ],
     imports: [
         CommonModule,
         MediaPlayerModule,
         MidiModule,
-        ColorModule
+        ColorModule,
+        AudioModule
     ],
     providers: [
 

@@ -37,7 +37,7 @@ class ColorActions {
     }
 
     changeColor() {
-        var c = new Object([...this.state.colorList]);
+        let c = new Object([...this.state.colorList]);
         c[this.action.color.index -1] = this.action.color;
         return tassign(this.state, {
             colorList: c,
@@ -49,7 +49,7 @@ class ColorActions {
 export function ColorReducer(state: IColorState, action): IColorState {
     if (state == null)
         return COLOR_INITIAL_STATE;
-    var actions = new ColorActions(state, action);
+        let actions = new ColorActions(state, action);
     switch (action.type) {
         case GET_COLOR_LIST_SUCCESS:
             return actions.getColorListSuccess();

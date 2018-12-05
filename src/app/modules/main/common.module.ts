@@ -7,32 +7,45 @@ import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MainExpansionPanelComponent } from './components/main-expansion-panel/main-expansion-panel.component';
 import { HomeComponent } from "src/app/modules/main/components/home/home.component";
+import { FileResourcePanelComponent } from "src/app/modules/main/components/file-resource-panel/file-resource-panel.component";
+import { CommonService } from "src/app/modules/main/services/common.service";
+import { MediaControllerComponent } from "src/app/modules/main/components/media-controller/media-controller.component";
+
+let components = [
+  FileResourcePanelComponent,
+  MediaControllerComponent
+]
+
+let modules = [
+  MaterialModule,
+  BrowserModule,
+  NgReduxModule,
+  FormsModule,
+  HttpClientModule,
+  BrowserAnimationsModule,
+]
+
+let services = [
+  CommonService
+]
 
 @NgModule({
   declarations: [
+    ...components
   ],
   imports: [
-    MaterialModule,
-    BrowserModule,
-    NgReduxModule,
-    FormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
+    ...modules
   ],
   providers: [
-  
+
   ],
   exports: [
-      MaterialModule,
-      BrowserModule,
-      NgReduxModule,
-      FormsModule,
-      HttpClientModule,
-      BrowserAnimationsModule,
-     
+    ...modules,
+    ...components
+
   ],
   entryComponents: [
-    
+
   ],
   bootstrap: []
 })

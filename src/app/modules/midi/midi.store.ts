@@ -26,7 +26,7 @@ class MidiActions {
     constructor(private state: IMidiState, private action) { }
 
     mapCommandToMidiKey() {
-        var m = {...this.state.midiMap};
+        let m = { ...this.state.midiMap };
         m[this.action.midiKey] = this.action.midiCommand;
         return tassign(this.state, {
             midiMap: m
@@ -57,7 +57,7 @@ class MidiActions {
         return tassign(this.state, {
             midiRecord: false,
             midiLive: true
-            
+
         })
     }
 
@@ -65,7 +65,7 @@ class MidiActions {
         return tassign(this.state, {
             midiRecord: false,
             midiLive: false
-            
+
         })
     }
 
@@ -75,13 +75,13 @@ class MidiActions {
         })
     }
 
-   
+
 }
 
 export function MidiReducer(state: IMidiState, action): IMidiState {
     if (state == null)
         return MIDI_INIT_STATE;
-    var actions = new MidiActions(state, action);
+    let actions = new MidiActions(state, action);
     switch (action.type) {
         case GET_MIDI_DEVICES:
             break;

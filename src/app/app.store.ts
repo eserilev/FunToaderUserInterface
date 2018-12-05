@@ -2,6 +2,8 @@
 import { combineReducers } from 'redux';
 import { ColorReducer } from 'src/app/modules/color/color.store';
 import { MidiReducer } from 'src/app/modules/midi/midi.store';
+import { CommonReducer } from 'src/app/modules/main/common.store';
+import { AudioReducer } from 'src/app/modules/audio/audio.store';
 
 
 export function tassign<T extends U, U>(target: T, ...source: U[]): T {
@@ -24,6 +26,8 @@ class AppActions {
 
 export const rootReducer = combineReducers<IAppState>({
     color: ColorReducer,
-    midi: MidiReducer
+    midi: MidiReducer,
+    common: CommonReducer,
+    audio: AudioReducer
     
 });

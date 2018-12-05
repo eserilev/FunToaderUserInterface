@@ -6,30 +6,30 @@ import { ColorPickerModule } from "ngx-color-picker";
 import { ColorService } from "src/app/modules/color/services/color.service";
 import { CommonModule } from "src/app/modules/main/common.module";
 
+let components = [
+  ColorComponent,
+  ColorPanelComponent,
+  ColorComponent,
+  ColorControlPanelComponent,
+]
 
 @NgModule({
   declarations: [
-    ColorComponent,
-    ColorPanelComponent,
-    ColorComponent,
-    ColorControlPanelComponent,
+    ...components
   ],
   imports: [
     CommonModule,
     ColorPickerModule,
   ],
   providers: [
-  
+
     ColorService,
   ],
   exports: [
-    ColorComponent,
-    ColorPanelComponent,
-    ColorComponent,
-    ColorControlPanelComponent,
+    ...components
   ],
   entryComponents: [
-    
+
   ],
   bootstrap: []
 })

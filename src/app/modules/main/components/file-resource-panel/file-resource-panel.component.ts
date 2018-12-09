@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MediaFile } from 'src/app/modules/main/models/media-file.model';
+import { MediaFile } from '../../models/media-file.model';
 
 @Component({
   selector: 'file-resource-panel',

@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { MediaPanelType } from 'src/app/modules/main/enums/media-panel-type.enum';
-import { ICommonState } from 'src/app/modules/main/common.store';
+import { MediaPanelType } from '../enums/media-panel-type.enum';
+import { ICommonState } from '../common.store';
 import { NgRedux } from '@angular-redux/store';
-import { CHANGE_MEDIA_PANEL } from 'src/app/modules/main/common.actions';
+import { CHANGE_MEDIA_PANEL } from '../common.actions';
 
 @Injectable({
   providedIn: 'root'

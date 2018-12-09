@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { IColorState } from 'src/app/modules/color/color.store';
 import { NgRedux } from '@angular-redux/store';
-import { ColorModel } from 'src/app/modules/color/models/color.model';
+import { ColorModel } from '../models/color.model';
 import { Rgba } from 'ngx-color-picker/dist/lib/formats';
-import { GET_COLOR_LIST_SUCCESS, SEND_COLOR_MESSAGE, SEND_COLOR_MESSAGE_SUCCESS, SEND_COLOR_MESSAGE_FAILURE, CHANGE_COLOR } from 'src/app/modules/color/color.actions';
-import { ColorRequestModel } from 'src/app/modules/color/models/color-request.model';
+import { GET_COLOR_LIST_SUCCESS, SEND_COLOR_MESSAGE, SEND_COLOR_MESSAGE_SUCCESS, SEND_COLOR_MESSAGE_FAILURE, CHANGE_COLOR } from '../color.actions';
+import { ColorRequestModel } from '../models/color-request.model';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { environment } from 'src/environments/environment';
-import { IMidiState } from 'src/app/modules/midi/midi.store';
-import { MidiService } from 'src/app/modules/midi/services/midi.service';
+import { environment } from '../../../../environments/environment';
+import { IMidiState } from '../../midi/midi.store';
+import { MidiService } from '../../midi/services/midi.service';
 
 
 @Injectable({
@@ -73,6 +73,5 @@ export class ColorService {
 
   changeColor(color: ColorModel) {
     this.ngRedux.dispatch({type: CHANGE_COLOR, color: color});
-
   }
 }

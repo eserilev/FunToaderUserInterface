@@ -1,6 +1,6 @@
-import { ColorModel } from "src/app/modules/color/models/color.model";
+import { ColorModel } from "./models/color.model";
 import { Rgba } from "ngx-color-picker/dist/lib/formats";
-import { GET_COLOR_LIST_SUCCESS, SEND_COLOR_MESSAGE, CHANGE_COLOR } from "src/app/modules/color/color.actions";
+import { GET_COLOR_LIST_SUCCESS, SEND_COLOR_MESSAGE, CHANGE_COLOR } from "./color.actions";
 
 export function tassign<T extends U, U>(target: T, ...source: U[]): T {
     return Object.assign({}, target, ...source);

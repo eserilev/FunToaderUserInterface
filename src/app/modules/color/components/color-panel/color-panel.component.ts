@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
-import { ColorModel } from 'src/app/modules/color/models/color.model';
-import { ColorRequestModel } from 'src/app/modules/color/models/color-request.model';
-import { ColorService } from 'src/app/modules/color/services/color.service';
+import { ColorModel } from '../../models/color.model';
+import { ColorRequestModel } from '../../models/color-request.model';
+import { ColorService } from '../../services/color.service';
 
 @Component({
   selector: 'app-color-panel',

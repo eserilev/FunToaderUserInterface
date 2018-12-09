@@ -3,9 +3,10 @@ import {VgCoreModule} from 'videogular2/core';
 import {VgControlsModule} from 'videogular2/controls';
 import {VgOverlayPlayModule} from 'videogular2/overlay-play';
 import {VgBufferingModule} from 'videogular2/buffering';
-import { VideoPlayerComponent } from "src/app/modules/media-player/components/video-player/video-player.component";
-import { MaterialModule } from "src/app/material.module";
-import { CommonModule } from "src/app/modules/main/common.module";
+import { VideoPlayerComponent } from "./components/video-player/video-player.component";
+import { MaterialModule } from "../../material.module";
+import { CommonModule } from "../main/common.module";
+import { MediaPlayerService } from "./services/media-player.service";
 
 let components = [
   VideoPlayerComponent
@@ -19,6 +20,10 @@ let modules = [
   CommonModule
 ]
 
+let services = [
+  MediaPlayerService
+]
+
 @NgModule({
   declarations: [
     ...components
@@ -28,7 +33,7 @@ let modules = [
    
   ],
   providers: [
-  
+    ...services
   ],
   exports: [
     ...components

@@ -1,5 +1,5 @@
-import { ColorModel } from "src/app/modules/color/models/color.model";
-import { RequestModel } from "src/app/modules/main/models/request.model";
+import { ColorModel } from "./color.model";
+import { RequestModel } from "../../main/models/request.model";
 
 export class ColorRequestModel implements RequestModel {
     id: number;

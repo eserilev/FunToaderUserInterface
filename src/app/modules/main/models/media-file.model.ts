@@ -1,4 +1,4 @@
-import { MediaFileType } from "src/app/modules/main/enums/media-file-type.enum";
+import { MediaFileType } from "../enums/media-file-type.enum";
 
 export class MediaFile {
     public name: string;

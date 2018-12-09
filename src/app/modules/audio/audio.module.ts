@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
-import { CommonModule } from "src/app/modules/main/common.module";
+import { CommonModule } from "../main/common.module";
 import { AudioComponent } from './components/audio/audio.component';
-import { AudioControlPanelComponent } from "src/app/modules/audio/components/audio-control-panel/audio-control-panel.component";
+import { AudioControlPanelComponent } from "../audio/components/audio-control-panel/audio-control-panel.component";
 import { AudioSettingsComponent } from './components/audio-settings/audio-settings.component';
 
 let components = [

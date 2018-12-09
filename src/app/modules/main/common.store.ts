@@ -1,5 +1,5 @@
-import { MediaPanelType } from "src/app/modules/main/enums/media-panel-type.enum";
-import { CHANGE_MEDIA_PANEL } from "src/app/modules/main/common.actions";
+import { MediaPanelType } from "./enums/media-panel-type.enum";
+import { CHANGE_MEDIA_PANEL } from "./common.actions";
 
 
 

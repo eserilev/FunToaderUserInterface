@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MidiService } from 'src/app/modules/midi/services/midi.service';
+import { MidiService } from '../../services/midi.service';
 import { select } from '@angular-redux/store/lib/src/decorators/select';
 import { Observable } from 'rxjs/internal/Observable';
 

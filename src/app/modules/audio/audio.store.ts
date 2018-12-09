@@ -1,6 +1,6 @@
-import { MediaFile } from "src/app/modules/main/models/media-file.model";
-import { CHANGE_AUDIO_COUNT, CHANGE_AUDIO_TIMER } from "src/app/modules/audio/audio.actions";
-import { AudioPage } from "src/app/modules/audio/models/audio-page.model";
+import { MediaFile } from "../main/models/media-file.model";
+import { CHANGE_AUDIO_COUNT, CHANGE_AUDIO_TIMER } from "../audio/audio.actions";
+import { AudioPage } from "../audio/models/audio-page.model";
 
 export function tassign<T extends U, U>(target: T, ...source: U[]): T {
     return Object.assign({}, target, ...source);

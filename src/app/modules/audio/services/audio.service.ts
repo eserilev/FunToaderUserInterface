@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { NgRedux } from '@angular-redux/store';
-import { IAudioState } from 'src/app/modules/audio/audio.store';
-import { IMidiState } from 'src/app/modules/midi/midi.store';
+import { IAudioState } from '../../audio/audio.store';
+import { IMidiState } from '../../midi/midi.store';
 import { HttpClient } from '@angular/common/http';
-import { MidiService } from 'src/app/modules/midi/services/midi.service';
-import { CHANGE_AUDIO_TIMER, CHANGE_AUDIO_COUNT } from 'src/app/modules/audio/audio.actions';
+import { MidiService } from '../../midi/services/midi.service';
+import { CHANGE_AUDIO_TIMER, CHANGE_AUDIO_COUNT } from '../audio.actions';
 
 @Injectable({
   providedIn: 'root'

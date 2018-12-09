@@ -1,9 +1,9 @@
 import { NgModule } from "@angular/core";
 
-import { MidiComponent } from "src/app/modules/midi/components/midi/midi.component";
+import { MidiComponent } from "./components/midi/midi.component";
 
-import { MidiService } from 'src/app/modules/midi/services/midi.service';
-import { CommonModule } from "src/app/modules/main/common.module";
+import { MidiService } from './services/midi.service';
+import { CommonModule } from "../main/common.module";
 
 let components =  [
   MidiComponent,

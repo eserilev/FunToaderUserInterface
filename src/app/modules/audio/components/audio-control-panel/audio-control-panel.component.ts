@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { select } from '@angular-redux/store';
-import { MediaPanelType } from 'src/app/modules/main/enums/media-panel-type.enum';
+import { MediaPanelType } from '../../../main/enums/media-panel-type.enum';
 import { Observable, Subject } from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
 import { OnDestroy } from '@angular/core/src/metadata/lifecycle_hooks';
-import { AudioPage } from 'src/app/modules/audio/models/audio-page.model';
+import { AudioPage } from '../../models/audio-page.model';
 
 @Component({
   selector: 'audio-control-panel',

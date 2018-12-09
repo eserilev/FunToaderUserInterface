@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { select } from '@angular-redux/store';
 import { Observable, Subject } from 'rxjs';
 import { OnDestroy } from '@angular/core/src/metadata/lifecycle_hooks';
-import { AudioService } from 'src/app/modules/audio/services/audio.service';
+import { AudioService } from '../../services/audio.service';
 import { takeUntil } from 'rxjs/internal/operators/takeUntil';
 
 @Component({

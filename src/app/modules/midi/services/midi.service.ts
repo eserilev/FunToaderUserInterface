@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable, from, Subject } from 'rxjs';
 import { NgRedux } from '@angular-redux/store';
-import { IMidiState } from 'src/app/modules/midi/midi.store';
-import { GET_MIDI_DEVICES, GET_MIDI_DEVICES_SUCCESS, GET_MIDI_DEVICES_FAILURE, SELECT_MIDI_DEVICE, START_RECORDING_MIDI, STOP_MIDI, START_MIDI } from 'src/app/modules/midi/midi.actions';
-import { RequestModel } from 'src/app/modules/main/models/request.model';
+import { IMidiState } from '../midi.store';
+import { GET_MIDI_DEVICES, GET_MIDI_DEVICES_SUCCESS, GET_MIDI_DEVICES_FAILURE, SELECT_MIDI_DEVICE, START_RECORDING_MIDI, STOP_MIDI, START_MIDI } from '../midi.actions';
+import { RequestModel } from '../../main/models/request.model';
 
 
 @Injectable({

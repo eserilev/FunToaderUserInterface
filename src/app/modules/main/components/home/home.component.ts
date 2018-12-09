@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
-import { MediaPanelType } from 'src/app/modules/main/enums/media-panel-type.enum';
+import { MediaPanelType } from '../../enums/media-panel-type.enum';
 import { select } from '@angular-redux/store';
 import { Observable, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/internal/operators/takeUntil';
@@ -54,6 +54,11 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.iconRegistry.addSvgIcon(
       'stop',
       this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/baseline-stop.svg')
+    );
+
+    this.iconRegistry.addSvgIcon(
+      'settings',
+      this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/baseline-settings.svg')
     );
   }
 

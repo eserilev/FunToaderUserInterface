@@ -3,18 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NgRedux, DevToolsExtension, NgReduxModule } from '@angular-redux/store';
-import { IAppState, APP_INITIAL_STATE, rootReducer } from 'src/app/app.store';
+import { IAppState, APP_INITIAL_STATE, rootReducer } from './app.store';
 import { isDevMode } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ContentViewerComponent } from './modules/main/components/content-viewer/content-viewer.component';
-import { MaterialModule } from 'src/app/material.module';
+import { MaterialModule } from './material.module';
 import 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MediaPlayerModule } from 'src/app/modules/media-player/media-player.module';
-import { ColorModule } from 'src/app/modules/color/color.module';
-import { MidiModule } from 'src/app/modules/midi/midi.module';
-import { MainModule } from 'src/app/modules/main/main.module';
+import { MediaPlayerModule } from './modules/media-player/media-player.module';
+import { ColorModule } from './modules/color/color.module';
+import { MidiModule } from './modules/midi/midi.module';
+import { MainModule } from './modules/main/main.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 

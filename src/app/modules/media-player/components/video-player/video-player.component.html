@@ -1,12 +1,14 @@
 <mat-card>
   <div class="table">
-    <div class="row">
-      <div class="col-sm-12" style="height:20em">
+    <div class="row"  [ngSwitch]="mediaType">
+      <div class="col-sm-12" *ngSwitchDefault style="height:20em">
         <vg-player>
           <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
             <source src="https://static.videogular.com/assets/videos/videogular.mp4" type="video/mp4">
           </video>
         </vg-player>
+      </div>
+      <div class="col-sm-12" *ngSwitchCase="mediaTypeEnum.Color"  [style.background]="selectedColor?.rgbaValue" style="height:20em">
       </div>
     </div>
   </div>

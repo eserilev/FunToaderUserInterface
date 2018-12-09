@@ -1,9 +1,10 @@
 
 import { combineReducers } from 'redux';
-import { ColorReducer } from 'src/app/modules/color/color.store';
-import { MidiReducer } from 'src/app/modules/midi/midi.store';
-import { CommonReducer } from 'src/app/modules/main/common.store';
-import { AudioReducer } from 'src/app/modules/audio/audio.store';
+import { ColorReducer } from './modules/color/color.store';
+import { MidiReducer } from './modules/midi/midi.store';
+import { CommonReducer } from './modules/main/common.store';
+import { AudioReducer } from './modules/audio/audio.store';
+import { MediaPlayerReducer } from './modules/media-player/media-player.store';
 
 
 export function tassign<T extends U, U>(target: T, ...source: U[]): T {
@@ -28,6 +29,7 @@ export const rootReducer = combineReducers<IAppState>({
     color: ColorReducer,
     midi: MidiReducer,
     common: CommonReducer,
-    audio: AudioReducer
+    audio: AudioReducer,
+    media: MediaPlayerReducer,
     
 });

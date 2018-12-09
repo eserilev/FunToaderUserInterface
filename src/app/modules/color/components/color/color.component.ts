@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
-import { ColorModel } from 'src/app/modules/color/models/color.model';
+import { ColorModel } from '../../models/color.model';
 import { select } from '@angular-redux/store';
-import { ColorService } from 'src/app/modules/color/services/color.service';
+import { ColorService } from '../../services/color.service';
 
 @Component({
   selector: 'color',

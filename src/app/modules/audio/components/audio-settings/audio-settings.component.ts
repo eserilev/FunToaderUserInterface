@@ -18,7 +18,7 @@ export class AudioSettingsComponent implements OnInit, OnDestroy {
 
   public count: number;
   public timer: number;
-
+  public isAutoRestart: boolean = false;
 
   private destroy$: Subject<boolean> = new Subject<boolean>();
 

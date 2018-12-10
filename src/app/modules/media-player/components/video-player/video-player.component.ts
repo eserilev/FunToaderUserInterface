@@ -13,6 +13,7 @@ import { MediaPanelType } from '../../../main/enums/media-panel-type.enum';
 export class VideoPlayerComponent implements OnInit {
 
   public selectedColor: ColorModel;
+  public selectedAudio: AudioModel;
   public mediaType: MediaPanelType = MediaPanelType.Video;
   public mediaTypeEnum = MediaPanelType;
 

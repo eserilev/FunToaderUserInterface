@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { ColorModel } from '../../../color/models/color.model';
 import { MediaPlayerService } from '../../../media-player/services/media-player.service';
 import { MediaPanelType } from '../../../main/enums/media-panel-type.enum';
+import { AudioModel } from '../../../audio/models/audio.model';
 
 @Component({
   selector: 'app-video-player',
